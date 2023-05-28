@@ -1,0 +1,64 @@
+// container
+.container {
+  @apply mx-auto max-w-[1320px] px-4;
+}
+
+.bg-gradient {
+  @apply bg-gradient-to-r from-primary to-secondary;
+}
+
+.text-linear {
+  @apply bg-gradient-to-r from-primary to-secondary  bg-clip-text text-transparent;
+}
+
+.rounded-sm {
+  @apply rounded-[6px];
+}
+.rounded {
+  @apply rounded-[8px];
+}
+.rounded-lg {
+  @apply rounded-[10px];
+}
+.rounded-xl {
+  @apply rounded-[16px];
+}
+.rounded-2xl {
+  @apply rounded-[24px];
+}
+
+.shadow {
+  @apply shadow-[0_4px_18px] shadow-primary/20;
+}
+
+.shadow-lg {
+  @apply shadow-[0_8px_22px] shadow-primary/30;
+}
+
+//video button
+.video-button {
+  @apply absolute left-1/2 top-1/2 z-10 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary text-5xl text-white;
+
+  span {
+    @apply absolute left-0 top-0 -z-10 h-full w-full scale-0 rounded-full bg-inherit  opacity-80;
+    animation: pulse 4s ease-in-out infinite;
+
+    &:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 2s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 3s;
+    }
+  }
+}
+
+@keyframes pulse {
+  to {
+    @apply scale-[2] opacity-0;
+  }
+}

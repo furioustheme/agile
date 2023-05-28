@@ -1,0 +1,65 @@
+@@include('components/page-header.html', { "title": "contact us" })
+
+<section class="section pt-4">
+  <div class="container">
+
+    <div class="lg:col-5 mx-auto mb-14">
+      <div class="text-center">
+        <h2 class="mb-4">Get in Touch with agile</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit nihilmaxime corporis cumque totam aliquidm sint .</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mx-auto md:col-10 lg:col-8">
+        <form action="#" method="POST">
+          <div class="mb-7">
+            <div class="row gy-3">
+              <div class="lg:col-6">
+                <label for="name" class="form-label text-dark">
+                  First Name <sup class="text-red-500">*</sup>
+                </label>
+                <input required id="name" class="form-input" placeholder="John Doe" type="text" />
+              </div>
+              <div class="lg:col-6">
+                <label for="last-name" class="form-label text-dark">
+                  Last Name <sup class="text-red-500">*</sup>
+                </label>
+                <input required id="last-name" class="form-input" placeholder="John Doe" type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="mb-7">
+            <label for="mail" class="form-label text-dark">
+              Email Address <sup class="text-red-500">*</sup>
+            </label>
+            <input required id="mail" class="form-input" placeholder="john.doe@email.com" type="email" />
+          </div>
+          <div class="mb-7">
+            <div class="row gy-3">
+              <div class="lg:col-6">
+                <label for="compnay-name" class="form-label text-dark">
+                  Company name <sup class="text-red-500">*</sup>
+                </label>
+                <input required id="compnay-name" class="form-input" type="text" />
+              </div>
+              <div class="lg:col-6">
+                <label for="number" class="form-label text-dark">
+                  Phone number <sup class="text-red-500">*</sup>
+                </label>
+                <input required id="number" class="form-input" type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="mb-7">
+            <label for="message" class="form-label text-dark">
+              Message <sup class="text-red-500">*</sup>
+            </label>
+            <textarea required class="form-input" placeholder="How Can we Help You?" id="message" rows="8"></textarea>
+          </div>
+          <button aria-label="submit" type="submit" class="btn-lg btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
